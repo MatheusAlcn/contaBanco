@@ -61,7 +61,7 @@ public abstract class Conta {
 	public boolean sacar(float valor) { 
 		
 		if(this.getSaldo() < valor) {
-			System.out.println("\n Saldo Insuficiente!");
+			System.out.println("Saldo Insuficiente!");
 			return false;
 		}
 			
@@ -83,6 +83,7 @@ public abstract class Conta {
 		case 1:
 			tipo = "Conta Corrente";
 		break;
+		
 		case 2:
 			tipo = "Conta Poupança";
 		break;
